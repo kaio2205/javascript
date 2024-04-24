@@ -1,0 +1,37 @@
+Aula 1>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Na linguagem JavaScript o ponto e virgula é opcional podemos usar "" ou '' so nao podemos misturar
+Console.log escrever no terminal 
+Console.clear() Limpar a tela do terminal
+
+Dica: "" textos   '' importaçoes
+
+Nas estruturas de controle condicional e nos laços de repetiçoes podemos omitir as chaves,porem so uma linha de codigo é vinculada
+
+Dica: nao omitir chaves
+
+
+
+Variaveis na linguagem JavaScript sao dinamicamentes tiapadas
+Para declarar uma constante ou variavel podemos 3 tipos de variavel usar const,var e let
+var (obsoleto - nao usar, pois pode gerar bug no projeto)
+
+Strings 
+.replace(",",";") // substitui um caracter pelo outro
+Concatenaçao(unir texto com conteudo de  Variaveis)
++(evitar o uso devido a tipagem a dinamica)
+'${}'(mais usado na linguagem JS)
+
+Numbers:
+
+
+Number (converte para o tipo numerico)
+Number.isInteger(verifica se o numero é inteiro)
+
+
+
+Booleans:
+
+
+
+------------------------------------------------------------------------------------------------------------

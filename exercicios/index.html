@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>APP-FLEX</title>
+
+</head>
+<body> <div class="container">
+    <h1>APP - flex</h1>
+    <img src="flex.png" alt="flex" id="status">
+    <form name="frmFlex">
+        <input type="number" name="txtetanol" size="8"placeholder="Etanol"required
+        class="Caixa">
+
+        <input type="number" name="textgasolina" size="8"placeholder="Gasolina"required
+        class="Caixa">
+
+        <input type="button" value="Vantagem" onclick="calcular()">
+        <input type="reset" value="Limpar" onclick="Limpar()">
+    </form>
+</div>
+
+<!-- tag script liga o documento ao JS -->
+
+<script src="calcflex.js"></script>
+</body>
+</html>
