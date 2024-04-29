@@ -1,17 +1,18 @@
 // *Fundamentos da JavaScript
 // *Sintaxe basica de linguagem
 
-
+// importaçao de pacotes 
+const colors = require('colors')
 // sentenças
 
 
 
 console.log
-('hello world')
+('hello world'.rainbow.bold)
 
 // blocos
 {
-    console.log("Hello")
+    console.log("Hello".rainbow)
 }
 
 // omissão de chaves em estruturas de controle 

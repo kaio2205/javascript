@@ -35,3 +35,80 @@ Booleans:
 
 
 ------------------------------------------------------------------------------------------------------------
+
+
+Aula 2 --------------------------------------------------------------------------------------------------------
+
+Operadores aritiméticos  
+ATENÇAO a regra de precedencia
+
+1º) Parênteses
+2º) Multiplicação
+3º) Divisão
+4º) Soma
+5º) Subtração
+
+
+
+Comparadores:
+OBS:
+Não usar os comparadores  == != (riscos devido a tipagem dinamica)
+
+---------------
+NPM (Node  package Maneger)
+Gerenciador de pacotes  node (pacotes com funcionalidades que pode ser adicionadas ao node) 
+Para gerenciar os pacotes Node é nescessario  configurar  o package.json
+
+
+joson(JavaScript Object Notation) 
+npm -version 
+npm ls (Listar pacotes instalados)
+npm i (instalar um pacote)
+npm r (remover um pacote) 
+
+OBS : os pacotes sao instalados na raiz do projeto 
+
+Passo 1 criar  o arquivo  package.json
+
+npm init 
+
+
+Repositório de Pacote https://www.npmjs.com/
+
+
+------------------------------------------------
+Exercicio 
+Criar um app para calcular a porcentagem usando a regra de 3 conforme modelo:
+
+10% de 200 = 20
+X     Y      valor 
+
+200------------100
+x              10
+ 
+
+
+
+Variaveis:
+3 Variaveis: x y valor
+
+
+Entrada
+x, y  
+
+
+Processamento:
+valor  = (x*y)/100
+
+Saida:
+valor
+
+
+----------------------------------
+
+Funçao e´ um bloco de codigo reutilizavel Funçao simples:
+
+
+function nome(){
+    
+}

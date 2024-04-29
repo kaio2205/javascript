@@ -1,0 +1,23 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "Tutorial de Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaio2205/javascript.git"
+  },
+  "author": "Kaio Eduardo de Carvalho Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaio2205/javascript/issues"
+  },
+  "homepage": "https://github.com/kaio2205/javascript#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "readline-sync": "^1.4.10"
+  }
+}
