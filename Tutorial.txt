@@ -112,3 +112,30 @@ Funçao e´ um bloco de codigo reutilizavel Funçao simples:
 function nome(){
     
 }
+
+
+
+Funçao com retorno 
+
+function nome (){
+    return
+}
+
+
+Funçao  Anonima
+nome = function () {
+
+}
+
+let  nome = function () {
+
+}
+
+
+Funçao em JavaScript moderno podem ser simplificados
+
+obs----------------------------------
+typeoff //verifica a tipagem
+tipos primitivos (Strings, Number, e Booleans)
+function
+Object

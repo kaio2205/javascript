@@ -1,4 +1,7 @@
-let nota1, nota2, nota3, nota4
+//* @ author Kaio Eduardo
+
+
+let nota1, nota2, nota3, nota4 , media
  
  
 function calcular() {
@@ -6,6 +9,7 @@ function calcular() {
     nota2 = Number(frmMedia.txtnota2.value.replace(",", "."))
     nota3 = Number(frmMedia.txtnota3.value.replace(",", "."))
     nota4 = Number(frmMedia.txtnota4.value.replace(",", "."))
+    
  
     const resultado = (nota1 + nota2 + nota3 + nota4) / 4
  
