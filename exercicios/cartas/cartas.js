@@ -16,12 +16,30 @@ function sortearCarta(){
     let nipe = nipes[Math.floor(Math.random()  *4)] // sorteando (0 = 3)
     let face = faces[Math.floor(Math.random() *13)]// sortenando (0-12)
 
-    console.log (`${face}${nipe}`)
-     document.getElementById('sup').innerHTML = `<div>${face}${nipe}</div>`
+    // console.log (`${face}${nipe}`)
+    // Determinar a cor com base no naipe sorteando antes de exibira a carta 
+    
+    let cor 
+    if (nipe === '♡'|| nipe === '♦') {
+        cor = '#ff0000' /* vermelho*/
+
+    }
+    else{
+        cor = '#000000' /* preto*/
+    }
+
+    /** Renderizar a carta  */
+    
+    document.getElementById('sup').innerHTML = `<div>${face}</div><div>${nipe}</div>`
      
-     document.getElementById('centro').innerHTML = `<div>${face}${nipe}</div>`
+     document.getElementById('centro').innerHTML = `<div>${nipe}</div>`
      
      
-     document.getElementById('inf').innerHTML = `<div>${face}${nipe}</div>`
+     document.getElementById('inf').innerHTML = `<div>${face}</div><div>${nipe}</div>`
+
+    // aplicar a cor 
+    document.getElementById('sup').style.color=cor /** add a cor  */
+    document.getElementById('centro').style.color=cor /** add a cor  */
+    document.getElementById('inf').style.color=cor /** add a cor  */
 }
 
