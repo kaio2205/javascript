@@ -17,5 +17,11 @@ function sortearCarta(){
     let face = faces[Math.floor(Math.random() *13)]// sortenando (0-12)
 
     console.log (`${face}${nipe}`)
-
+     document.getElementById('sup').innerHTML = `<div>${face}${nipe}</div>`
+     
+     document.getElementById('centro').innerHTML = `<div>${face}${nipe}</div>`
+     
+     
+     document.getElementById('inf').innerHTML = `<div>${face}${nipe}</div>`
 }
+

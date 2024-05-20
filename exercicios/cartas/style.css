@@ -6,8 +6,9 @@ Folha de Estilo - cartas
 
 body{
     background-color: firebrick;
+    text-align: center;
 }
 
 button{
-    text-align: center;
+   border-radius: 10px;
 }
