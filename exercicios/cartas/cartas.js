@@ -32,7 +32,7 @@ function sortearCarta(){
     
     document.getElementById('sup').innerHTML = `<div>${face}</div><div>${nipe}</div>`
      
-     document.getElementById('centro').innerHTML = `<div>${nipe}</div>`
+     
      
      
      document.getElementById('inf').innerHTML = `<div>${face}</div><div>${nipe}</div>`
@@ -41,5 +41,24 @@ function sortearCarta(){
     document.getElementById('sup').style.color=cor /** add a cor  */
     document.getElementById('centro').style.color=cor /** add a cor  */
     document.getElementById('inf').style.color=cor /** add a cor  */
+    /** Atualizar o centro da carta  */
+    let centroCarta = document.getElementById('centro')
+    if(face === 'J') {
+        centroCarta.innerHTML = `<img src="./img/valete.png">`
+    } else if (face === 'Q') {
+        centroCarta.innerHTML = `<img src="./img/dama.png">`
+    } else if (face === 'K') {
+        centroCarta.innerHTML = `<img src="./img/rei.png">`
+    } else {
+        document.getElementById('centro').innerHTML = `${nipe}`
+        document.getElementById('centro').style.color = cor
+    }
+
+
+
+
+
+
+
 }
 
