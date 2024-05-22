@@ -1,141 +1,237 @@
-Aula 1>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Aula 1 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Na linguagem JS o ; é opcional
+Podemos usar "" ou '' só não podemos misturar "'
+console.log //escrever no terminal
+console.clear() // limpar a tela do terminal
+Dica: "" Textos '' Importações
 
-Na linguagem JavaScript o ponto e virgula é opcional podemos usar "" ou '' so nao podemos misturar
-Console.log escrever no terminal 
-Console.clear() Limpar a tela do terminal
+Nas estruturas de controle condicional e nos laços de repetições podemos omitir as chaves, porém só uma linha de código é vinculada
+Dica: Não omitir as chaves
 
-Dica: "" textos   '' importaçoes
+Variáveis na linguagem JS são dinamicamente tipadas e somente temos 3 tipos (string, number e boolean)
+Para declarar uma constante ou variável podemos usar:
+const, var e let
+var (obsoleto - não usar, pois pode gerar BUG no projeto)
 
-Nas estruturas de controle condicional e nos laços de repetiçoes podemos omitir as chaves,porem so uma linha de codigo é vinculada
+Strings:
+.repace(",",".")  //substitui um caractere por outro
 
-Dica: nao omitir chaves
-
-
-
-Variaveis na linguagem JavaScript sao dinamicamentes tiapadas
-Para declarar uma constante ou variavel podemos 3 tipos de variavel usar const,var e let
-var (obsoleto - nao usar, pois pode gerar bug no projeto)
-
-Strings 
-.replace(",",";") // substitui um caracter pelo outro
-Concatenaçao(unir texto com conteudo de  Variaveis)
-+(evitar o uso devido a tipagem a dinamica)
-'${}'(mais usado na linguagem JS)
+Concatenação (unir texto com conteúdo de variáveis)
++ (evitar o uso devido a tipagem dinâmica)
+`${}` (mais usado na linguagem JS)
 
 Numbers:
-
-
-Number (converte para o tipo numerico)
-Number.isInteger(verifica se o numero é inteiro)
-
-
+Number (converte para o tipo numérico)
+Number.isInteger (verifica se um número é inteiro ou não inteiro)
+.toFixed(2) (formatar em 2 casas decimais)
 
 Booleans:
+Só admitem 2 valores: true / false
 
-
-
-------------------------------------------------------------------------------------------------------------
-
-
-Aula 2 --------------------------------------------------------------------------------------------------------
-
-Operadores aritiméticos  
-ATENÇAO a regra de precedencia
-
+Aula 2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Operadores aritméticos
+ATENÇÃO a regra de precedência:
 1º) Parênteses
 2º) Multiplicação
 3º) Divisão
 4º) Soma
 5º) Subtração
 
-
-
 Comparadores:
-OBS:
-Não usar os comparadores  == != (riscos devido a tipagem dinamica)
+Observação importante:
+NÃO usar os comparadores == != (riscos devido a tipagem dinâmica)
 
----------------
-NPM (Node  package Maneger)
-Gerenciador de pacotes  node (pacotes com funcionalidades que pode ser adicionadas ao node) 
-Para gerenciar os pacotes Node é nescessario  configurar  o package.json
+----------------------------
+NPM (Node Package Manager)
+Gerenciador de pacotes node (pacotes com funcionalidades que podem ser adicionadas ao node)
+Para gerenciar(versão, atualizações etc.) os pacotes node, é necessário configurar o package.json 
 
-
-joson(JavaScript Object Notation) 
-npm -version 
-npm ls (Listar pacotes instalados)
+json(JavaScript Object Notation)
+npm -version
+npm ls (listar pacotes instalados)
 npm i (instalar um pacote)
-npm r (remover um pacote) 
+npm r (remover um pacote)
 
-OBS : os pacotes sao instalados na raiz do projeto 
+observação: os pacotes são instalados no projeto(raiz)
 
-Passo 1 criar  o arquivo  package.json
+Passo 1 - Criar o arquivo package.json
+npm init
 
-npm init 
+Repositório de pacotes:
+https://www.npmjs.com/
 
-
-Repositório de Pacote https://www.npmjs.com/
-
-
-------------------------------------------------
-Exercicio 
-Criar um app para calcular a porcentagem usando a regra de 3 conforme modelo:
+Exercício:
+Criar no console JS um app para calcular a porcentagem, usando regra de 3, conforme modelo:
 
 10% de 200 = 20
-X     Y      valor 
+X      Y     valor
 
-200------------100
-x              10
+200 ------------- 100%
+        \   / 
+          X
+        /   \      
+valor ----------- 10%
+
+valor x 100 = 200 x 10
+
+valor x 100 = 2000
  
+            2000
+valor  =  --------
+             100
 
+        20
+valor = --
+         1
 
+valor = 20 
 
-Variaveis:
-3 Variaveis: x y valor
+Dedução da fórmula para calcular porcentagem usando regra de 3
 
+10% de 200 = 20
+X      Y     valor
 
-Entrada
-x, y  
+Y   ------------- 100%
+        \   / 
+          X
+        /   \      
+valor ----------- X
 
+valor * 100 = y * x
+
+valor = (x * y) / 100
+
+Variáveis:
+3 variáveis:  x y valor
+
+Entrada:
+x , y
 
 Processamento:
-valor  = (x*y)/100
+valor = (x * y) / 100
 
-Saida:
+Saída:
 valor
 
-
-----------------------------------
-
-Funçao e´ um bloco de codigo reutilizavel Funçao simples:
-
-
-function nome(){
-    
+-------------------------------------
+Funções:
+Função é um bloco de código reutilizável
+Função simples:
+function nome() {
+        
 }
 
-
-
-Funçao com retorno 
-
-function nome (){
-    return
+Função com retorno
+function nome() {
+  return
 }
 
-
-Funçao  Anonima
-nome = function () {
+Funções anônimas
+const nome = function () {
 
 }
 
-let  nome = function () {
-
+let nome = function () {
+        
 }
 
+Funções em JavaScript moderno podem ser simplificadas
 
-Funçao em JavaScript moderno podem ser simplificados
-
-obs----------------------------------
-typeoff //verifica a tipagem
-tipos primitivos (Strings, Number, e Booleans)
+_____________________________________________________
+obs:
+typeof //verifica a tipagem dinâmica
+tipos primitivos (string, number e boolean)
 function
-Object
+object
+
+_____________________________________________________
+POO - Programação Orientada a Objetos
+
+Pilares:
+- Abstração
+- Herança
+- Polimorfiamo
+- Encapsulamento (Segurança)
+
+Atenção!
+Toda classe modelo inicia com uma letra maiúscula
+
+IMPORTANTE!!!
+new -> indica a criação de um objeto
+this -> quando se refere a ele mesmo
+super -> indica o uso de atributos da classe pai
+polimorfismo é a mudança do comportamento de um método já existente.
+*** Atenção O polimorfismo não cria outro método, ele apenas modifica o comportamento de um método existente. Obrigatório usar o mesmo nome do método da classe pai.
+
+DICA:
+class Classe {} //cria uma classe modelo
+- O nome da classe sempre deve começar com uma letra maiúscula
+- Classe (biologia)
+- objeto (new) (substantivo)
+- atributos (variáveis) (adjetivos)
+- ações(métodos/funções) (verbos)
+
+Encapsulamento
+1) proteger a variável criando um modificador privado (acesso exclusivo da classe ao qual pertence)
+2) criar uma função para obter o conteúdo da variável (get)
+3) criar uma função para gravar um dado na variável (set)
+
+No JavaScript usamos _ antes da variável para encapsular
+
+---------------------------------------------------------
+No JavaScript objetos podem ser criados sem uma classe modelo
+Estruturas de dados usando objetos
+Exemplos:
+- package.json
+- coleção do banco de dados (MongoDB)
+
+ATENÇÃO !!!
+Tipos no JavaScript
+- string
+- number
+- boolean
+- function
+- object
+
+
+Aula 6 >>>>>>>>>>>>>
+
+array (Vetor)
+-   array multidimencional (matrix)
+-  é uma forma de especial de trabalhar com variáveis
+-  Indice  [0] [1].....
+- Na linguagem JS array pe um objeto
+
+Atenção!!!!!!!!
+cuidado ao manipular os dados e alterar o Indicedo array
+Mais seguro:
+push(): Metodo usado para add ao final do array 
+pop() : excluir o ultimo registro
+delete(): excluir um dado sem alterar o indice 
+
+Percorrendo um array
+
+1) for forEach
+2) map() // percorre  o array, faz algo gera outro array com resultado 
+
+
+um array tambem pode ser criando como se fosse um objeto 
+
+let nome = []
+let nome = new array()
+
+
+um array pode ser criado com uma estruturas de dados junto com objetos e podem  ser usasdos filtros para manipulaçao dos dados 
+
+sempre criar uma copia do array antes ( para exibiçao ) antes de filtrar os dados 
+-------------------------------------------------------------------------
+DOM documment object model 
+ é tecnica para identificar elementos html (tags) que serao manipulados pelo css ou js
+ é uma forma de trabalhar objetos com html
+A tecnica consiste em atribuir um id a um elemento 
+
+setTimeout((){
+ usado para executar uma funçao infinitamente a cada determinado segundo    
+},1000)
+
+O JS capaz de de add uma class ou remover  do css

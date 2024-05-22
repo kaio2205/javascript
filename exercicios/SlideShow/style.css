@@ -1,0 +1,32 @@
+/** folha de estilo 
+/** @author Kaio eduardo */
+
+
+
+*{
+    margin:0;
+    padding: 0px;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+
+}
+
+/** efeito fade*/
+
+#slide.FadeOut{
+    opacity: 0.1;
+
+
+}
+#slide{
+    transition: opacity 2s;
+    opacity: 1;
+}
