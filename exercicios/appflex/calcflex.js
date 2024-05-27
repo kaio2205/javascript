@@ -20,7 +20,7 @@ function calcular() {
     
     else{
         if (etanol< 0.7 * gasolina){
-            document.getElementById('status').src="./img/etanol.png"
+            document.getElementById('status').src="./img/etanol"
         
             }
         
