@@ -1,9 +1,11 @@
-   function convertRealToDollar(real) {
-   let dollar,real,resultado
-   dollar = Number(frmReal.txtreal.value.replace(",", "."))
-   dollar = Number(txtDollar.value.replace(",", "."))
-  }
-  
-  const resultado ()
-  
-  console.log(`${real} Converter para Dollar${dollar} Dollar`);
+let real,dollar,dollar1
+ 
+
+function calcular() {
+    real = Number(frmreal.txtreal.value)
+    dollar = Number(frmreal.txtdollar.value)
+
+    dollar = real * dollar1
+
+    frmreal.txtresultado.value = real.toFixed(2)
+}
