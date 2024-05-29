@@ -267,3 +267,19 @@ sintaxe: function logar(login, senha){
 .then(()=>{})
 .catch(()=>{})
 
+obs: é possivel usar mais de um .then para trabalhar diferentes tipos de resposta
+
+
+async - await
+(forma mais moderna de trabalhar Assincronismo)
+
+Para trabalhar com async e await devemos usar funnçoes sendo que  o async é Obrigatório o await
+
+dica:
+\n(quebrar a linha)"nao e exibido "
+neste caso usamos dentro da funçao try catch para trata exceçoes
+try{
+
+ } catch(error){
+
+ }
