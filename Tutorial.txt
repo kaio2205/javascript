@@ -235,3 +235,35 @@ setTimeout((){
 },1000)
 
 O JS capaz de de add uma class ou remover  do css
+-----------------------------------------------------------------------------------------
+
+Plataforma node
+Obs Ao colocar um Repositório ou trabalhar em um outro pc é nescessario reinstalar as bibliotecas presentes nas dependecia do package.json
+
+
+npm install 
+
+---------------------------------------------------------------------------------
+
+Assincronismo:
+Metodo e funçoes que permitem ao Js trabalhar multitarefas
+-Banco de dados 
+-Acesso de URL(serviços de nuvem, web services, apis,etc)
+-acesso ao disco(HD,SSD etc) do equipamento
+
+Promise ("Promessa")
+1) A resposta a requisiçao pode ou nao dar certo ao certo
+2) A resposta pode ter um atraso (tempo de resposta)
+sintaxe: function logar(login, senha){
+    // uso de promise para trabalhar a requisiçao ao banco de dados de forma assincrona 
+    return new Promise((resolve, reject)=>{
+        
+    })
+// resolve - OK
+// reject  - erro
+
+// quando ttrabalhamos com promises, devemos usar a estrutura abaixo para obter o resultado da funçao 
+
+.then(()=>{})
+.catch(()=>{})
+
