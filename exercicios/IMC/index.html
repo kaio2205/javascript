@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>Calculadora de IMC</h1>
-        <div class="form-group">
-            <label for="genero">Gênero:</label>
-            <select id="genero">
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="idade">Idade:</label>
-            <input type="number" id="idade">
-        </div>
-        <div class="form-group">
-            <label for="altura">Altura (m):</label>
-            <input type="number" id="altura" step="0.01">
-        </div>
-        <div class="form-group">
-            <label for="peso">Peso (kg):</label>
-            <input type="number" id="peso">
-        </div>
-        <button onclick="calcularIMC()">Calcular IMC</button>
-        <div id="resultado"></div>
+        <h1>Calcule seu IMC</h1>
+        <form name="frmImc">
+            <label>Idade</label>
+            <input type="number" name="txtIdade" id="idade" class="caixa" required>
+            <br>
+            <label>Gênero</label>
+            <input type="text" name="txtGenero" id="genero" placeholder="m/f">
+            <br>
+            <label>Peso</label>
+            <input type="number" name="txtPeso" class="caixa" placeholder="kg" id="peso" required>
+            <br>
+            <label>Altura</label>
+            <input type="number" name="txtAltura" class="caixa" id="altura" placeholder="cm" required>
+            <input type="button" value="Calcular" onclick="calcularImc()">
+            <input type="reset" value="Limpar" onclick="limpar()">
+        </form>
+    </div>
+    <div class="roleta">
+        <h2>Resultado</h2>
+        <p id="valorImc"></p>
+        <img id="status" src="./img/default.png" alt="roleta imc">
     </div>
 
-    <script src="script.js"></script>
+    <script src="imc.js"></script>
 </body>
+
 </html>
