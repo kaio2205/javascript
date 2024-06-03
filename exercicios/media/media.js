@@ -14,13 +14,13 @@ function calcular() {
     const resultado = (nota1 + nota2 + nota3 + nota4) / 4
  
     if (frmMedia.txtnota1.value === "") {
-        alert("Digite  a nota")
+      
     } else if (frmMedia.txtnota2.value === "") {
-        alert("Digite  a nota")
+        
     } else if (frmMedia.txtnota3.value === "") {
-        alert("Digite  a nota")
+        
     } else if (frmMedia.txtnota4.value === "") {
-        alert("Digite  a nota")
+       
     }else {
         if(resultado < 4 ) {
             document.getElementById('status').src = "./img/aluno_reprovado.png"

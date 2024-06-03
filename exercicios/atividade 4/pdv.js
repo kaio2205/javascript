@@ -13,7 +13,7 @@ function calcularDesconto() {
    totalFinal = Number(frmPdv.txtvenda.value)
 
     //processamento
-     totalFinal = (produto+ lucro) /100 
+     totalFinal = (produto* lucro) /100 
     //saída
     frmPdv.txtproduto.value = `R$ ${produto.toFixed(2)}`
     frmPdv.txtlucro.value = `% ${lucro.toFixed(2)}`
